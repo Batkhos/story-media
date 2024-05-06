@@ -1,0 +1,72 @@
+.LeftBar{
+    position: sticky;
+    top: 3.6rem;
+    height: 100vh;
+    overflow: auto;
+    background: var(--color-card);
+    width: 80%;
+    }
+    .LeftBar::-webkit-scrollbar{
+    display: none;
+    }
+    .left-container{
+    width: 80%;
+    margin: 0 auto;
+    }
+    .prof{
+    margin-top: 20px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    .prof img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        object-fit:cover;
+    }
+
+    .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    }
+    .size{
+        width: 28px;
+        color: var(--text-color);
+    }
+    @media (max-width:1024px) {
+        .left-container{
+            width: fit-content;
+        }
+        .left-container h4{
+            display: none;
+        }
+        .prof img{
+            border-radius: 50%;
+            height: 40px;
+            width:100px;
+            object-fit:cover;
+            position: relative;
+            left: 32px;
+        }
+        .LeftBar{
+            align-items: center;
+            width: 100px;
+            height:fit-content;
+        }
+        .size{
+            width:100px;
+            height: 30px;
+            color: var(--text-color);
+        }
+    
+      
+    }
+    @media (max-width:768px) {
+        .LeftBar{
+            display: none;
+        }
+    }

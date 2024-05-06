@@ -1,0 +1,21 @@
+@media (max-width:768px) {
+    nav .user{
+        display: none;
+    }
+    .nav-container a{
+        font-size: 1rem;
+    }
+    .nav-container .logo{
+        font-size: 1.3rem;
+    }
+    .Nav-Serchbar{
+        border: none;
+        padding: 0;
+    }
+    .Nav-Serchbar input{
+        display: none;
+    }
+    .nav-Left .nav-right{
+        gap:20px
+    }
+}
